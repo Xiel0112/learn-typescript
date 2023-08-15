@@ -22,5 +22,5 @@ function sum(a, b) {
   return a + b;
 }
 
-// COMMENT: @ts-check로 인해 지정된 타입과 입력된 데이터의 타입이 일치하지 않으면 에러 발생
+// FIXME: @ts-check로 인해 지정된 타입과 입력된 데이터의 타입이 일치하지 않으면 에러 발생
 sum(10, '20'); // 1020
