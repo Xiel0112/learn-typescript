@@ -15,3 +15,6 @@ function add(): number {
 function sum02(a: number, b: number): number {
   return a + b;
 }
+
+// FIXME: 불필요한 인자를 넘겨줄 경우, 에러 발생
+sum02(10, 20, 30, 40);
