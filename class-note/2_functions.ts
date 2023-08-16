@@ -18,3 +18,9 @@ function sum02(a: number, b: number): number {
 
 // FIXME: 불필요한 인자를 넘겨줄 경우, 에러 발생
 sum02(10, 20, 30, 40);
+
+// COMMENT: 함수의 옵셔널 파라미터
+function log(a: string, b?: string) {}
+
+log('hello world');
+log('hello world', 'abc');
