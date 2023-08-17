@@ -15,9 +15,7 @@ function logMessage(value: string | number) {
 logMessage('hello');
 logMessage(100);
 
-// -----
-// -----
-// -----
+// --------------------------------------------------
 
 // COMMENT: 유니온 타입과 인터섹션 타입의 차이
 interface Developer01 {
