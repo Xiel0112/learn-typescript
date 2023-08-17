@@ -5,7 +5,7 @@ let str: string = 'hello';
 let num: number = 10;
 
 // COMMENT: 3. 배열
-let arr: Array<number> = [1, 2, 3];
+let arr01: Array<number> = [1, 2, 3];
 let items: number[] = [1, 2, 3];
 let heroes: Array<string> = ['Capt', 'Thor', 'Hulk'];
 
@@ -13,7 +13,7 @@ let heroes: Array<string> = ['Capt', 'Thor', 'Hulk'];
 let address: [string, number] = ['Gangnam', 100];
 
 // COMMENT: 5. 객체
-let obj: object = {};
+let obj01: object = {};
 let person: { name: string; age: number } = { name: 'capt', age: 100 };
 
 // COMMENT: 6. 진위값
