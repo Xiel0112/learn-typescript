@@ -35,3 +35,53 @@ logText03<boolean>(true);
 
 const x = logText03<string>('하이');
 x.split('');
+
+// --------------------------------------------------
+
+// COMMENT: 인터페이스에 제네릭 선언
+interface Dropdown<T> {
+  value: T;
+  selected: boolean;
+}
+
+const obj: Dropdown<string> = { value: 'abc', selected: false };
+
+// --------------------------------------------------
+
+// COMMENT: 제네릭의 타입 제한
+function logTextLength01<T>(text: T[]): T[] {
+  console.log(text.length);
+  return text;
+}
+
+logTextLength01<string>(['hi', 'abc']);
+
+// --------------------------------------------------
+
+// COMMENT: 제네릭의 타입 제한2 - 정의된 타입 이용
+interface LengthType {
+  length: number;
+}
+
+function logTextLength02<T extends LengthType>(text: T): T {
+  console.log(text.length);
+
+  return text;
+}
+
+logTextLength02('a');
+
+// --------------------------------------------------
+
+// COMMENT: 제네릭의 타입 제한3 - keyof
+interface ShoppingItem {
+  name: string;
+  price: number;
+  stock: number;
+}
+
+function getShoppingItemOption<T extends keyof ShoppingItem>(itemOption: T): T {
+  return itemOption;
+}
+
+getShoppingItemOption('price');
